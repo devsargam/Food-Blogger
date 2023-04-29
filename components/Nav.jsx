@@ -64,13 +64,13 @@ function NavBar() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
-          {/* <Image
+          <Image
             src={"/logo.svg"}
-            height={100}
-            width={100}
+            height={50}
+            width={50}
             alt="FoodBook"
-          ></Image> */}
-          <span className="font-black">FoodBook</span>
+          ></Image>
+          {/* <span className="font-black">FoodBook</span> */}
         </Typography>
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="hidden lg:inline-block">
