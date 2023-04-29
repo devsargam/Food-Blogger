@@ -15,6 +15,8 @@ function Posts() {
             cookingTime={post.cookTime}
             tags={post.tags}
             author={post.author}
+            likes={post.likes}
+            comments={post.comments}
           />
         );
       })}
