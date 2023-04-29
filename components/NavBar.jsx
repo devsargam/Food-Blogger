@@ -22,16 +22,16 @@ function NavBar() {
 
   const navList = (
     <ul className="mb-4 mt-5 flex flex-col gap-2 lg:mb-0 lg:mt-0 lg:flex-row lg:items-center lg:gap-6">
-      <Typography
-        as="li"
-        variant="small"
-        color="blue-gray"
-        className="p-1 font-normal"
-      >
-        <Link href="/popular" className="flex items-center">
+      <Link href="/popular" className="flex items-center">
+        <Typography
+          as="li"
+          variant="small"
+          color="blue-gray"
+          className="p-1 font-normal"
+        >
           Popular
-        </Link>
-      </Typography>
+        </Typography>
+      </Link>
       <Typography
         as="li"
         variant="small"
@@ -48,7 +48,7 @@ function NavBar() {
         color="blue-gray"
         className="p-1 font-normal"
       >
-        <Link href="about" className="flex items-center">
+        <Link href="aboutus" className="flex items-center">
           About Us
         </Link>
       </Typography>
@@ -58,23 +58,19 @@ function NavBar() {
   return (
     <Navbar className="mx-auto max-w-screen-xl py-2 px-4 lg:px-8 lg:py-4">
       <div className="container mx-auto flex items-center justify-between text-blue-gray-900">
-        <Typography
-          as="a"
-          href="#"
-          variant="small"
-          className="mr-4 cursor-pointer py-1.5 font-normal"
-        >
+        <Link href="/">
           <Image
             src={"/logo.svg"}
             height={50}
             width={50}
             alt="FoodBook"
           ></Image>
-          {/* <span className="font-black">FoodBook</span> */}
-        </Typography>
+        </Link>
         <div className="hidden lg:block">{navList}</div>
         <Button variant="gradient" size="sm" className="hidden lg:inline-block">
-          {isLoggedIn ? <span>Profile</span> : <span>Sign In</span>}
+          <Link href="/signup">
+            {isLoggedIn ? <span>Profile</span> : <span>Sign In</span>}
+          </Link>
         </Button>
         <IconButton
           variant="text"

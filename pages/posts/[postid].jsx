@@ -1,6 +1,6 @@
 import React from "react";
 import { useRouter } from "next/router";
-import NavBar from "@/components/Nav";
+import NavBar from "@/components/NavBar";
 import recipe from "@/data/mock-recipe";
 import Image from "next/image";
 

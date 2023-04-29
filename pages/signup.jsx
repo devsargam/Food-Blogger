@@ -1,4 +1,4 @@
-import NavBar from "@/components/Nav";
+import NavBar from "@/components/NavBar";
 import SignUp from "@/components/SignUp";
 import Head from "next/head";
 

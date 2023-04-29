@@ -1,4 +1,5 @@
-import NavBar from "@/components/Nav";
+import Footer from "@/components/Footer";
+import NavBar from "@/components/NavBar";
 import Posts from "@/components/Posts";
 import Head from "next/head";
 
@@ -14,9 +15,10 @@ export default function Home() {
       <main className=" bg-gray-50">
         {/* TODO: Implement Search in the navbar */}
         <NavBar />
-        <Posts />
+        {/* <Posts /> */}
 
         {/* Footer component */}
+        {/* <Footer /> */}
       </main>
     </>
   );
