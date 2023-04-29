@@ -12,7 +12,7 @@ const posts = [
     author: "John Doe",
   },
   {
-    postId: 1,
+    postId: 2,
     heading: "Pizza",
     subHeading:
       "It is a savory dish of Italian origin consisting of a usually round, flattened base of leavened wheat-based dough topped with tomatoes, cheese, and often various other ingredients (such as anchovies, mushrooms, onions, olives, pineapple, meat, etc.), which is then baked at a high temperature, traditionally in a wood-fired oven.",

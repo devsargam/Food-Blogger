@@ -7,6 +7,7 @@ import {
   IconButton,
 } from "@material-tailwind/react";
 import Link from "next/link";
+import Image from "next/image";
 
 function NavBar() {
   const [openNav, setOpenNav] = useState(false);
@@ -63,6 +64,12 @@ function NavBar() {
           variant="small"
           className="mr-4 cursor-pointer py-1.5 font-normal"
         >
+          {/* <Image
+            src={"/logo.svg"}
+            height={100}
+            width={100}
+            alt="FoodBook"
+          ></Image> */}
           <span className="font-black">FoodBook</span>
         </Typography>
         <div className="hidden lg:block">{navList}</div>
