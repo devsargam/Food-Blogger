@@ -1,3 +1,4 @@
+import NavBar from "@/components/Nav";
 import Head from "next/head";
 
 export default function Home() {
@@ -9,9 +10,9 @@ export default function Home() {
         <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
       </Head>
       {/* This project uses tailwindcss for css */}
-      <main>
-        <h1>Food Blogger</h1>
-        <p>This is where the project starts</p>
+      <main className=" bg-gray-50">
+        {/* TODO: Implement Search in the navbar */}
+        <NavBar />
       </main>
     </>
   );
