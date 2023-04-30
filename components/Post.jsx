@@ -1,6 +1,7 @@
 import Image from "next/image";
 import Link from "next/link";
 import React from "react";
+import Share from "./Share";
 
 function Post({
   id,
@@ -88,9 +89,14 @@ function Post({
           {comments}
         </div>
         {/* TODO: Implement logic for share */}
-        <button onClick={() => {}}>
+        {/* <button
+          onClick={() => {
+            setIsModelOpen((isModelOpen) => !isModelOpen);
+          }}
+        >
           <Image src="/posts/share.svg" height={30} width={30} alt="share" />
-        </button>
+        </button> */}
+        <Share />
       </div>
     </div>
   );
